@@ -1,0 +1,184 @@
+x=2
+print(x)
+y=4
+sum=x+y
+print(sum)
+product=x*y
+print(product)
+divide=y/x
+print(divide)
+exp=x**y
+s=x//y
+print(s)
+
+p=int(input("Enter any number:"))
+Area=3.14*p*p
+print("Area of circle is:",Area)
+
+
+#1st task(voting system)
+# write code on voting system where age is greater than or equal to 18 print eligible to vote else print not eligible to vote
+
+age = int(input("Enter age : "))
+
+if age >= 18:
+    print("Eligible for Voting!")
+else:
+    print("Not Eligible for Voting!")
+
+#2nd task (grading system)
+#write a code  on grading system where marks is greater than or equal to 90 print A Grade
+a=int(input("Enter your marks:"))
+if a>=90:
+    print("Grade is A")
+elif a>=80  or a<=90:
+    print("Grade is B")
+elif a>=60  or a<=80:
+    print("Grade is C")
+else:
+    print("FAIL!")
+
+#tuples=are used to store values in a given variable.
+
+ #b = (1, "hello", 3.14, True)
+
+ #lists=are used to stores values in the in given lists
+
+f={"Name":"Lakshay","Age":18,"College":"ABC"}
+print(f["Name"])
+
+#Dictonary=Built in data type which stores data in dictonary.
+
+ my_dict = {"name": "Alice", "age": 30, "city": "New York"}
+    empty_dict = {}
+
+#loop
+
+#while loop
+#i=+1
+#count=i=+1
+#count=1
+#while count >0:
+   # if count %2 ==0:
+        #print("count is even")
+   # else:
+        #print("count is odd")
+
+#for loop
+
+
+num=[1,2,3,4,5,6,7,8,]
+
+
+for num in num:
+    if num %2 ==0:
+        print("[num] is even")
+    else:
+        print("[num] is odd")
+
+#Write a code for student grade
+#inculde array multiple student marks store
+#acoording to their particular number marks will be decided
+#Hint:use for loop and if else
+
+student_marks = [85, 92, 78, 65, 45, 95, 70, 55, 88, 60]
+
+print("Student Grades:")
+
+
+for i in range(len(student_marks)):
+    marks = student_marks[i]
+    student_number = i + 1  
+
+    if marks >= 90:
+        grade = 'A'
+    elif marks >= 80:
+        grade = 'B'
+    elif marks >= 70:
+        grade = 'C'
+    elif marks >= 60:
+        grade = 'D'
+    else:
+        grade = 'F'
+
+    print(f"Student {student_number}: Marks = {marks}, Grade = {grade}")
+
+    #Functions=Functions in Python are named, reusable blocks of code designed to perform specific tasks.
+
+    def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Alice")
+
+
+#Class
+class Car:
+    def_int_(self,brand,color):
+        selfbrand=brand#attribute
+        selfcolor=color#attribute
+
+        def drive(self)#attribute
+           print("(self.color)(self brand)is driving")
+
+        #object
+        car1=Car("BMW","Black")
+        car2=Car("Tesla","White")
+
+        car1.drive()
+        car2.drive()
+
+
+        class Animal:
+    def speak(self):
+      print("animal speaks")
+
+class DogAnimal:  
+    def speak(self):
+        print("dog barks")
+
+        dog=Dog()
+        dog.speak()
+
+
+class Cat:
+    def sound(self):
+        return "meow"
+
+class Dog:
+    def sound(self):
+        return "wool"
+
+#polymorphism in action
+for animal in [Cat(),Dog()]:
+ print(animal.sound())
+
+
+#Pandas in python=Used for data manipulation and data analytics
+#To import pandas:-
+#pip install pandas
+#    OR
+#python -m pip install pandas
+
+import pandas as pd
+data=[10,20,30,40]
+df = pd.DataFrame(data)
+print(df)
+
+#data = {'Name': ['Alice', 'Bob', 'Charlie'],
+           # 'Age': [25, 30, 35],
+          #  'City': ['New York', 'London', 'Paris']}
+   # M = pd.DataFrame(data)
+   # print(M)
+
+#import pandas as pd
+  #cal={'Lakshay':400,'lucky':934,'happy':675}
+#D=pd.Series(cal)
+#print(D)
+
+
+
+
+
+
+
+
